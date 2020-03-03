@@ -1,0 +1,126 @@
+/* Para Imagem de fundo preta que ele nos deu nas imagens*/
+
+/* Recordar que png permite gerir a transparencia*/
+body{
+    background: url(../images/bg.png);
+}
+
+/* Para o tipo de letra geral do site*/
+.site{
+    font-family: 'Holtwood One SC', sans-serif; 
+}
+
+/* Para o titulo BURGER MENU com os talheres*/
+.text-logo{
+    font-family: 'Holtwood One SC', sans-serif; 
+    color: #e7480f;
+    text-shadow: 2px 2px #ffd301;
+    font-size: 50px;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+/* Agora so p mudar a cor dos talheres do titulo de cima BURGER MENU */
+.text-logo .fas{
+    color: #ffd301;
+        text-shadow: 0px 0px #ffd301;
+}
+
+/* Separadores do nav Menu, saladas, etc */
+.nav {
+    margin-bottom: 20px;
+}
+
+.img-thumbnail{
+    margin-top: 10px;
+}
+
+/*Preços*/
+.price{
+    background: #5cb85c;
+    box-shadow: 0 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px rgba(0,0,0, 0.2);
+    -webkit-box-shadow: 0 1px rgba(0,0,0, 0.2);
+    color:#fff;
+    text-shadow: 2px 2px #333;
+    position: absolute;
+    right: 6px;
+    top: 20px;
+    padding: 5px 1àpx;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.price:before{
+    border: 4px solid transparent;
+    border-bottom: 4px solid #4a934a;
+    border-left: 4px solid #4a934a;
+    content: ""; /* Para que o before apareça e obrigatorio dar-lhe um conteudo*/
+    position: 1px;
+    top: -8px; 
+}
+
+.caption{
+    padding-top: 15px;
+}
+.caption > h4{
+    color: #e7480f;
+    font-size: 18px;
+}
+
+/* os botoes do nav que tem class "pill" */
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    background: #e7480f; /*passa de azul a cor-laranja quando se carrega no botao saladas, p.exemplo*/
+}
+
+/* p qd s passa o rato em cima dos botoes ficam letras laranjas com retangulo braco */
+.nav>li>a:focus,.nav>li>a:hover{
+    color:#e7480f;
+    background-color: #eee;/*Branco quando se tira o rato do botao */
+}
+
+/* Se nao focus nem hover ficar a branco */
+.nav>li>a{
+    color:#eee;
+    font-size: 18px;
+    text-shadow: 2px 2px #333;
+}
+
+/* Botao das compras */
+
+.btn-warning{
+    width:100%;
+    padding: 10px;
+    font-size: 16px;
+    color:#fff;
+    background-color: #e7480f;
+    text-decoration: none;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 15px;
+}
+
+/* Botao das compras com hover e focus para mudar de cor qd s passa o rato */
+.btn-warning:hover, .btn-order:focus{
+    color: #fff;
+    background-color: #c13c0d;
+}
+
+/* ADMIN da pagina index.php para que tenha o aspeto geral da nossa pagina web*/
+
+.admin{
+    /* Para estabelecer a borda branca da tabela e com border arredondando */
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}
+.help-inline{ /*Para que os erros sejam escritos a vermelho*/
+    color:red;
+}
+
+
+
+
+
+
+
+
